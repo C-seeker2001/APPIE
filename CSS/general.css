@@ -1,0 +1,138 @@
+/* ! Since i don't have my own system yet, i will use Jonas System in fontsize whitespace etc
+
+* 01 TYPOGRAPHY SYSTEM
+Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+Default:  400
+Medium:   500
+SemiBold: 600
+BOLD:     700
+
+- Line heights:
+Default: 1
+small: 1.05
+medium: 1.2
+Paragraph default: 1.6
+
+- Letter Spacing
+-0.5px
+0.75px
+
+- SPACING SYSTEM (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+* 02 COLORS:
+
+- Primary (back-ground) #EEF1F6
+- text prim color : #0E1133
+- Tints:  #fdf2e9, #fae5d3
+- Shades: #cf711f
+- Accents: #FF3E66
+- Greys:
+#777,
+#767676
+#333,
+#555,
+#6f6f6f -> ligtest possible gray allowed on this #fdf2e9
+
+
+* 05 SHADOWS
+
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+* 06 BORDER-RADIUS
+Default / small:  9px
+big :             11px
+
+* 07 WHITESPACE
+
+- Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+ */
+/******************************************/
+/* GLOBLA RESET */
+/******************************************/
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #0e1133;
+}
+/******************************************/
+/* FUNCTIONS // REUSEABLE CODE */
+/* ! <<<<<<<<<<<<<CONTAINERS LVL>>>>>>>>>>>>> */
+/******************************************/
+.padding--container-F {
+  padding: 9.6rem 0;
+}
+.center--container-F {
+  max-width: 160rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 3.2rem;
+}
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+/******************************************/
+/* FUNCTIONS // REUSEABLE CODE */
+/* ! <<<<<<<<<<<<<ELEMENTS LVL>>>>>>>>>>>>> */
+/******************************************/
+.clean-small-list-F {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+.display-left-F {
+  margin-left: auto;
+}
+.icon-styling-F {
+  font-size: 1.6rem;
+}
+/* ! links custmiztions */
+.clean-link-F:link,
+.clean-link-F:active {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+strong {
+  font-weight: 700;
+}
+.paragraph {
+  font-size: 2rem;
+  font-weight: 550;
+}
+/* ! Heading and paragraphs */
+.section-header {
+  font-size: 5.2rem;
+  margin-bottom: 2rem;
+  line-height: 6rem;
+}
+.section-paragraph {
+  font-size: 2rem;
+}
+.read-more ion-icon {
+  font-size: 1.8rem;
+}
