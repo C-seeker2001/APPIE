@@ -39,7 +39,9 @@
 /******************************************/
 .hero-section {
   background-color: #eef1f6;
-  padding: 6.4rem 0 0 0;
+  padding: 9.2rem 0;
+  position: relative;
+  overflow: hidden;
 }
 .hero-section-txt {
   display: flex;
@@ -109,8 +111,11 @@ form {
   font-size: 2rem;
 }
 .hero-img {
+  position: absolute;
+  top: 0;
+  right: 10rem;
   transform: translateX(10rem);
-  width: 90rem;
+  height: 100%;
 }
 /******************************************/
 /* HOW DOES IT WORKS SECTION */
@@ -359,7 +364,7 @@ form {
   box-shadow: 0 1rem 3.6rem 0 rgba(253, 72, 87, 0.1);
 }
 .img-numbers {
-  height: 9.6rem;
+  height: 100%;
 }
 .numbers-txt {
   font-size: 5.2rem;
@@ -774,17 +779,27 @@ h3 span:nth-child(3) {
   margin-bottom: 6.4rem;
 }
 /* ! common attribute between cicons containers */
-.contain {
+.featuredIn-Flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.contain1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+}
+.contain2 {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(8, 1fr);
 }
 .featuredIn-icon-1 {
-  gap: 3.2rem;
-  margin-bottom: 3.2rem;
+  padding: 0 25rem;
 }
 .featuredIn-icon-2 {
-  gap: 4.6rem;
+  padding: 0 35rem;
+  margin-bottom: 6.4rem;
 }
 .featuredIn-box {
   background-color: #fff;
@@ -792,7 +807,10 @@ h3 span:nth-child(3) {
   border-radius: 11px;
   box-shadow: 0 2.4rem 3.6rem rgba(0, 0, 0, 0.2);
 }
-.featuredIn-img {
+.featuredIn-box2 {
+  grid-column: span 2;
+}
+.featuredIn-box .featuredIn-img {
   height: 5.2rem;
   width: 5.2rem;
 }

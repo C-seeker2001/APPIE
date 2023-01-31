@@ -136,3 +136,8 @@ strong {
 .read-more ion-icon {
   font-size: 1.8rem;
 }
+
+/* ! mobile nav */
+.icon-mobile-nav {
+  display: none;
+}
