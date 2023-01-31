@@ -158,9 +158,9 @@
 /* BELOW 900px (tablets) COMPONENT */
 /******************************************/
 @media (max-width: 57em) {
-  * {
+  /* * {
     border: 1px solid red;
-  }
+  } */
   body {
     font-size: 37.5%;
   }
@@ -364,9 +364,9 @@
   body {
     font-size: 37.5%;
   }
-  * {
+  /* * {
     border: 1px solid red !important;
-  }
+  } */
   .grid--4--cols {
     grid-template-columns: 1fr;
   }
