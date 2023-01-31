@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- ! ADDING FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +27,7 @@
     <!-- ! CONNECT CSS FILES -->
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/styling.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
     <title>APPIE</title>
   </head>
   <body>
@@ -74,11 +76,14 @@
               </a>
             </li>
             <li class="navigation-list-item">
-              <a href="#" class="nav-txt-link clean-link-F">Contact</a>
+              <a href="#" class="nav-txt-link clean-link-F">
+                <span>Contact</span>
+              </a>
             </li>
           </ul>
         </nav>
         <a href="#" class="display-left-F clean-link-F CTA-btn">Get Started</a>
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
       </div>
     </header>
     <main>
@@ -533,7 +538,7 @@
             </ul>
             <a class="clean-link-F plan-btn s-plan-btn" href="#">Choose plan</a>
           </div>
-          <div class="pricing-card">
+          <div class="pricing-card p2">
             <p class="price-name">Juicy</p>
             <h3 class="price-value">
               <span>$</span>
@@ -608,87 +613,91 @@
         </div>
       </section>
       <!-- TODO BULDING FEATURED IN SECTION -->
-      <section class="featuredIn-section padding--container-F">
-        <div class="section-header heading-container">
-          <h2>Appie works best with</h2>
-          <h2>your favorite platforms</h2>
-        </div>
-        <p class="section-paragraph f-txt">
-          Join over 40,000 businesses worldwide.
-        </p>
-        <div class="contain featuredIn-icon-1">
-          <figure class="featuredIn-box">
-            <img
-              class="featuredIn-img"
-              src="/res/Project_photos/sponsers/sponser-1.png"
-              alt=""
-            />
-          </figure>
-          <figure class="featuredIn-box">
-            <img
-              class="featuredIn-img"
-              src="/res/Project_photos/sponsers/sponser-2.png"
-              alt=""
-            />
-          </figure>
-          <figure class="featuredIn-box">
-            <img
-              class="featuredIn-img"
-              src="/res/Project_photos/sponsers/sponser-3.png"
-              alt=""
-            />
-          </figure>
-          <figure class="featuredIn-box">
-            <img
-              class="featuredIn-img"
-              src="/res/Project_photos/sponsers/sponser-4.png"
-              alt=""
-            />
-          </figure>
-          <figure class="featuredIn-box">
-            <img
-              class="featuredIn-img"
-              src="/res/Project_photos/sponsers/sponser-5.png"
-              alt=""
-            />
-          </figure>
-          <figure class="featuredIn-box">
-            <img
-              class="featuredIn-img"
-              src="/res/Project_photos/sponsers/sponser-6.png"
-              alt=""
-            />
-          </figure>
-        </div>
-        <div class="contain featuredIn-icon-2">
-          <figure class="featuredIn-box">
-            <img
-              class="featuredIn-img"
-              src="/res/Project_photos/sponsers/sponser-7.png"
-              alt=""
-            />
-          </figure>
-          <figure class="featuredIn-box">
-            <img
-              class="featuredIn-img"
-              src="/res/Project_photos/sponsers/sponser-8.png"
-              alt=""
-            />
-          </figure>
-          <figure class="featuredIn-box">
-            <img
-              class="featuredIn-img"
-              src="/res/Project_photos/sponsers/sponser-9.png"
-              alt=""
-            />
-          </figure>
-          <figure class="featuredIn-box">
-            <img
-              class="featuredIn-img"
-              src="/res/Project_photos/sponsers/sponser-10.png"
-              alt=""
-            />
-          </figure>
+      <section class="featuredIn-section">
+        <div class="padding--container-F center--container-F">
+          <div class="section-header heading-container">
+            <h2>Appie works best with</h2>
+            <h2>your favorite platforms</h2>
+          </div>
+          <p class="section-paragraph f-txt">
+            Join over 40,000 businesses worldwide.
+          </p>
+          <div class="featuredIn-Flex">
+            <div class="contain1 featuredIn-icon-1">
+              <figure class="featuredIn-box">
+                <img
+                  class="featuredIn-img"
+                  src="/res/Project_photos/sponsers/sponser-1.png"
+                  alt=""
+                />
+              </figure>
+              <figure class="featuredIn-box">
+                <img
+                  class="featuredIn-img"
+                  src="/res/Project_photos/sponsers/sponser-2.png"
+                  alt=""
+                />
+              </figure>
+              <figure class="featuredIn-box">
+                <img
+                  class="featuredIn-img"
+                  src="/res/Project_photos/sponsers/sponser-3.png"
+                  alt=""
+                />
+              </figure>
+              <figure class="featuredIn-box">
+                <img
+                  class="featuredIn-img"
+                  src="/res/Project_photos/sponsers/sponser-4.png"
+                  alt=""
+                />
+              </figure>
+              <figure class="featuredIn-box">
+                <img
+                  class="featuredIn-img"
+                  src="/res/Project_photos/sponsers/sponser-5.png"
+                  alt=""
+                />
+              </figure>
+              <figure class="featuredIn-box">
+                <img
+                  class="featuredIn-img"
+                  src="/res/Project_photos/sponsers/sponser-6.png"
+                  alt=""
+                />
+              </figure>
+            </div>
+            <div class="contain2 featuredIn-icon-2">
+              <figure class="featuredIn-box2 featuredIn-box">
+                <img
+                  class="featuredIn-img"
+                  src="/res/Project_photos/sponsers/sponser-7.png"
+                  alt=""
+                />
+              </figure>
+              <figure class="featuredIn-box2 featuredIn-box">
+                <img
+                  class="featuredIn-img"
+                  src="/res/Project_photos/sponsers/sponser-8.png"
+                  alt=""
+                />
+              </figure>
+              <figure class="featuredIn-box2 featuredIn-box">
+                <img
+                  class="featuredIn-img"
+                  src="/res/Project_photos/sponsers/sponser-9.png"
+                  alt=""
+                />
+              </figure>
+              <figure class="featuredIn-box2 featuredIn-box l-img">
+                <img
+                  class="featuredIn-img"
+                  src="/res/Project_photos/sponsers/sponser-10.png"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -740,7 +749,7 @@
             </li>
           </ul>
         </div>
-        <div class="col--3">
+        <div class="col--2">
           <h4 class="footer-list-header">Support</h4>
           <ul class="clean-small-list-F footer-list">
             <li>
@@ -760,7 +769,7 @@
             </li>
           </ul>
         </div>
-        <div class="col--3">
+        <div class="col--2">
           <h4 class="footer-list-header">Get In Touch</h4>
           <ul class="clean-small-list-F footer-list get-in-touch-list">
             <li>
@@ -802,3 +811,4 @@
     </footer>
   </body>
 </html>
+;
