@@ -467,12 +467,13 @@
   }
   .hero-section-img {
     width: 50%;
+    padding-bottom: 4.8rem;
   }
   .hero-img {
     width: 100%;
     position: static;
     margin-left: auto;
-    transform: translate(10rem, 20rem);
+    transform: translate(0, 20rem);
   }
   .col--1 {
     min-width: 0;
@@ -481,5 +482,14 @@
   .contain2 {
     min-width: 0;
     padding: 0;
+  }
+  .footer-bx {
+    padding: 1.6rem;
+  }
+  .footer-icon {
+    min-width: 0;
+  }
+  .fa-brands {
+    font-size: 1.6rem;
   }
 }
