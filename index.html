@@ -2,7 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Appie is acompany that will help you to launch your company apps"
+    />
+    <!-- ! ADDING FAV-ICON -->
+    <link rel="icon" href="/res/Project_photos/fav-icon.png" />
+    <!-- ! ADDING IPHONE-ICON -->
+    <link rel="apple-touch-icon" href="/res/Project_photos/iphone-icon.png" />
+    <!-- ! ADDING ANDROID-ICON -->
+
     <!-- ! ADDING FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="js/script.js"></script>
     <!-- ! ADDING IOICONS SCRIPT -->
     <script
       type="module"
@@ -28,19 +40,19 @@
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/styling.css" />
     <link rel="stylesheet" href="CSS/media.css" />
-    <title>APPIE</title>
+    <title>APPIE &dash; Launch Your App</title>
   </head>
   <body>
     <!-- TODO BULDING NAVIGATION -->
     <header class="header">
       <div class="center--container-F nav-container">
-        <a href="#">
+        <a href="#main">
           <img src="res/Project_photos/logo.png" alt="APPIE Logo" />
         </a>
         <nav class="navigation">
           <ul class="clean-small-list-F nav-list">
             <li class="navigation-list-item">
-              <a href="#" class="nav-txt-link clean-link-F">
+              <a href="#home" class="nav-txt-link clean-link-F">
                 <span>Home</span>
                 <ion-icon
                   class="icon-styling-F h"
@@ -49,7 +61,7 @@
               </a>
             </li>
             <li class="navigation-list-item">
-              <a href="#" class="nav-txt-link clean-link-F">
+              <a href="#service" class="nav-txt-link clean-link-F">
                 <span>Services</span>
                 <ion-icon
                   class="icon-styling-F h"
@@ -58,7 +70,7 @@
               </a>
             </li>
             <li class="navigation-list-item">
-              <a href="#" class="nav-txt-link clean-link-F">
+              <a href="#pages" class="nav-txt-link clean-link-F">
                 <span>Pages</span>
                 <ion-icon
                   class="icon-styling-F"
@@ -67,7 +79,7 @@
               </a>
             </li>
             <li class="navigation-list-item">
-              <a href="#" class="nav-txt-link clean-link-F">
+              <a href="#news" class="nav-txt-link clean-link-F">
                 <span>News</span>
                 <ion-icon
                   class="icon-styling-F h"
@@ -76,19 +88,21 @@
               </a>
             </li>
             <li class="navigation-list-item">
-              <a href="#" class="nav-txt-link clean-link-F">
+              <a href="#contact" class="nav-txt-link clean-link-F">
                 <span>Contact</span>
               </a>
             </li>
           </ul>
         </nav>
-        <a href="#" class="display-left-F clean-link-F CTA-btn">Get Started</a>
+        <a href="#start" class="display-left-F clean-link-F CTA-btn"
+          >Get Started</a
+        >
         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
       </div>
     </header>
     <main>
       <!-- TODO BULDING HERO SECTION -->
-      <section class="hero-section">
+      <section class="hero-section" id="main">
         <div
           class="hero-section-container center--container-F grid grid--2--cols"
         >
@@ -142,7 +156,7 @@
         </div>
       </section>
       <!-- TODO BULDING HDIW SECTION -->
-      <section class="HDIW-section padding--container-F">
+      <section class="HDIW-section padding--container-F" id="home">
         <div class="HDIW-component-container center--container-F">
           <header>
             <h2 class="section-header">How does it work</h2>
@@ -387,7 +401,7 @@
         </div>
       </section>
       <!-- TODO BULDING LEARN MORE SECTION -->
-      <section class="learn-more-section">
+      <section class="learn-more-section" id="pages">
         <div class="learn-more-container center--container-F">
           <div class="learn-more-img-box">
             <div class="img-box--1 img-box-flex">
@@ -434,7 +448,7 @@
         </div>
       </section>
       <!-- TODO BULDING DOWNLOAD SECTION -->
-      <section class="download-section">
+      <section class="download-section" id="service">
         <figure class="center--container-F">
           <div class="download-box">
             <p class="downlaod-specail-txt">Download Our App</p>
@@ -474,7 +488,7 @@
         </figure>
       </section>
       <!-- TODO BULDING PRICING SECTION -->
-      <section class="pricing-section padding--container-F">
+      <section class="pricing-section padding--container-F" id="start">
         <div class="pricing-component center--container-F">
           <h2 class="section-header pricing-header">
             Simple pricing for Everyone
@@ -613,7 +627,7 @@
         </div>
       </section>
       <!-- TODO BULDING FEATURED IN SECTION -->
-      <section class="featuredIn-section">
+      <section class="featuredIn-section" id="news">
         <div class="padding--container-F center--container-F">
           <div class="section-header heading-container">
             <h2>Appie works best with</h2>
@@ -702,7 +716,7 @@
       </section>
     </main>
     <!-- TODO BULDING FOOTER SECTION -->
-    <footer>
+    <footer id="contact">
       <div class="footer-bx grid grid--4--cols center--container-F">
         <div class="col--1">
           <a href="#"><img src="/res/Project_photos/logo.png" alt="" /></a>
